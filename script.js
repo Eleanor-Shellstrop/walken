@@ -1,3 +1,5 @@
+// Run the following inside the console on the website
+
 // Artist, Title, Year
 for (let i = 0; i < 200; i++) {
     title = document.getElementsByClassName("c-gallery-vertical-album__title")[i].innerHTML
