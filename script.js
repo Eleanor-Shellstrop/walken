@@ -1,4 +1,4 @@
-// Run the following inside the console on the website
+// Run the following inside the console on the Rolling Stone website
 
 // Artist, Title, Year
 for (let i = 0; i < 200; i++) {
