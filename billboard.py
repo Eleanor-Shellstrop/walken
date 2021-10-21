@@ -4,12 +4,9 @@ import pandas as pd
 import pprint
 
 
-
 bbsongs = []
 
-
-#ids = ['1970s', '1980s', '1990s', '2000s', '2010s']
-ids = ['1970s']
+ids = ['1970s', '1980s', '1990s', '2000s', '2010s']
 
 for id in ids:
 	user_agent = "Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/79.0.3945.88 Safari/537.37"
