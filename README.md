@@ -1,19 +1,26 @@
 # More Cowbell
 
+Project by Anne Ensign
+
 Analysis between various statistics of Christopher Walken's film career and popular music that utilizes the cowbell.
 
 ![Fever](images/walken.gif)
 
 ## About
 
-### Concept
+### INTRODUCTION
 The Saturday Night Live sketch "More Cowbell" aired on April 8, 2000.[^1] It quickly because a pop culture sensation.  Will Ferrell, an SNL cast member and writer, was responsibile for penning the famous sketch.[^2] On *The Tonight Show Starring Jimmy Fallon* in 2019, Ferrell recounted a conversation (with tongue-in-cheek) that he had backstage with Walken after a play:
 
 > “You know, you’ve ruined my life. People, during the curtain call, bring cowbells and ring them. The other day I went for an Italian food lunch, and the waiter asked if I wanted more cowbell with my pasta bolognese.”[^3]
 
 I am curious to see if there is any correlation with Walken's film career (ratings, number of films per year, etc.) and popular songs that incorporate cowbell into the percussion instruments used in recording. 
 
-### Methodology
+### METHODOLOGY
+
+Sample size was comprised of:
+* 111 Christopher Walken films
+* 4284 songs with cowbell
+* 1369 popular songs to find mutual instances with cowbell songs
 
 **Walken Data**
 
@@ -29,6 +36,59 @@ I made three webscrapers to collect song data:
 I also copy/pasted a couple smaller lists of "best cowbell songs" and placed in another CSV to add to my cowbell sample size.[^7][^8] 
 
 Overall, over 5,600 songs were taken into the data and analyzed. The final list came to 131 cowbell songs that are popular/mainstream, with release dates ranging from 1964 to 2017, and genres such as Rock, Country, R&B, Pop and more.
+
+## Running the Program
+
+### Webscrapers
+
+If you cloned or downloaded this entire repo, you should have the CSVs that the web scrapers have made already available. These include:
+* `cowbell1_4247.csv`
+* `billboard.csv`
+
+If you want to run these on your own:
+
+1. Install [Beautiful Soup](https://www.crummy.com/software/BeautifulSoup/#Download)
+2. If desired, change folder location to download the CSVs. For example:
+   `df.to_csv(f'billboard.csv', sep=',', encoding='utf-8-sig', index = False)` to
+   `df.to_csv(f'./csv/billboard.csv', sep=',', encoding='utf-8-sig', index = False)`
+3. Run the file in your terminal.
+   `python cowbell.py`
+   `python billboard.py`
+
+### Tools and Libraries
+
+This repo utilizes a number of tools, frameworks and libraries that are all included with Anaconda. 
+[Anaconda documentation and install](https://docs.anaconda.com)
+Anaconda released an update on [September 24, 2020](https://docs.anaconda.com/anaconda/navigator/release-notes/). This repo runs on that latest release. 
+
+You can update by opening your terminal and enter:
+```
+conda update conda
+conda install anaconda=VersionNumber
+```
+[Click here](https://docs.anaconda.com/anaconda/install/update-version/) for notes on updating. 
+
+If you do not wish to install Anaconda, be sure your machine has the following:
+* [Python 3.0 or higher](https://www.python.org)
+* [Jupyter Notebook](https://jupyter.org)
+* [pandas](https://pandas.pydata.org/pandas-docs/stable/index.html)
+* [NumPy](https://numpy.org/doc/)
+* [Matplotlib](https://matplotlib.org)
+* [PyPi](https://pypi.org) to install the following:
+  * [SciPy](https://docs.scipy.org/doc/scipy/getting_started.html#getting-started-ref)
+  * [Seaborn](https://seaborn.pydata.org/index.html)
+
+Install with PyPi:
+`pip install scipy`
+`pip install seaborn`
+
+### Running the Program in Jupyter Notebook
+1. Clone the repository.
+2. Save the folder.
+3. Open `jupyter notebook` from command line or start menu.
+4. Navigate to the saved location of the repo.
+5. Open `walken.ipynb`.
+6. Click `Cell` tab and then `Run All`.
 
 [^1]: [More Cowbell - SNL](https://www.youtube.com/watch?v=cVsQLlk-T0s), *Saturday Night Live*, YouTube
 [^2]: [Recording Session (More Cowbell)](https://www.rollingstone.com/tv/tv-lists/my-favorite-saturday-night-live-sketch-119386/recording-session-more-cowbell-121088/), interview with Will Ferrell, *Rolling Stone Magazine.* 
