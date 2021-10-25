@@ -6,16 +6,14 @@ Analysis between various statistics of Christopher Walken's film career and popu
 
 ![Fever](images/walken.gif)
 
-## About
-
-### INTRODUCTION
+## INTRODUCTION
 The Saturday Night Live sketch "More Cowbell" aired on April 8, 2000.[^1] It quickly because a pop culture sensation.  Will Ferrell, an SNL cast member and writer, was responsible for penning the famous sketch.[^2] On *The Tonight Show Starring Jimmy Fallon* in 2019, Ferrell recounted a conversation (with tongue-in-cheek) that he had backstage with Walken after a play:
 
 > “You know, you’ve ruined my life. People, during the curtain call, bring cowbells and ring them. The other day I went for an Italian food lunch, and the waiter asked if I wanted more cowbell with my pasta bolognese.”[^3]
 
 I am curious to see if there is any correlation with Walken's film career (ratings, number of films per year, etc.) and popular songs that incorporate cowbell into the percussion instruments used in recording. 
 
-### METHODOLOGY
+## METHODOLOGY
 
 Sample size was comprised of:
 * 111 Christopher Walken films
@@ -38,7 +36,7 @@ I also copy/pasted a couple smaller lists of "best cowbell songs" and placed in 
 
 Overall, over 5,600 songs were taken into the data and analyzed. The final list came to 131 cowbell songs that are popular/mainstream, with release dates ranging from 1964 to 2017, and genres such as Rock, Country, R&B, Pop and more.
 
-## Running the Program
+## RUNNING THE PROGRAM
 
 ### Webscrapers
 
@@ -98,6 +96,20 @@ Install with PyPi:
 4. Navigate to the saved location of the repo.
 5. Open `walken.ipynb`.
 6. Click `Cell` tab and then `Run All`.
+
+## REQUIREMENTS
+
+Requirements met for Code Louisville:
+
+1. Create a dictionary or list, populate it with several values, retrieve at least one value, and use it in your program.
+2. Read data from an external file, such as text, JSON, CSV, etc and use that data in your application.
+3. Create and call at least 3 functions or methods, at least one of which must return a value that is used somewhere else in your code.
+4. Analyze text and display information about it (ex: how many words in a paragraph).
+5. Visualize data in a graph, chart, or other visual representation of data.
+6. Implement a “scraper” that can be fed a type of file or URL and pull information off of it.
+7. Use pandas, matplotlib, and/or numpy to perform a data analysis project. Ingest 2 or more pieces of data, analyze that data in some manner, and display a new result to a graph, chart, or other display.
+
+## FOOTNOTES:
 
 [^1]: [More Cowbell - SNL](https://www.youtube.com/watch?v=cVsQLlk-T0s), *Saturday Night Live*, YouTube
 [^2]: [Recording Session (More Cowbell)](https://www.rollingstone.com/tv/tv-lists/my-favorite-saturday-night-live-sketch-119386/recording-session-more-cowbell-121088/), interview with Will Ferrell, *Rolling Stone Magazine.* 
