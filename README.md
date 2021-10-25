@@ -9,7 +9,7 @@ Analysis between various statistics of Christopher Walken's film career and popu
 ## About
 
 ### INTRODUCTION
-The Saturday Night Live sketch "More Cowbell" aired on April 8, 2000.[^1] It quickly because a pop culture sensation.  Will Ferrell, an SNL cast member and writer, was responsibile for penning the famous sketch.[^2] On *The Tonight Show Starring Jimmy Fallon* in 2019, Ferrell recounted a conversation (with tongue-in-cheek) that he had backstage with Walken after a play:
+The Saturday Night Live sketch "More Cowbell" aired on April 8, 2000.[^1] It quickly because a pop culture sensation.  Will Ferrell, an SNL cast member and writer, was responsible for penning the famous sketch.[^2] On *The Tonight Show Starring Jimmy Fallon* in 2019, Ferrell recounted a conversation (with tongue-in-cheek) that he had backstage with Walken after a play:
 
 > “You know, you’ve ruined my life. People, during the curtain call, bring cowbells and ring them. The other day I went for an Italian food lunch, and the waiter asked if I wanted more cowbell with my pasta bolognese.”[^3]
 
@@ -49,16 +49,17 @@ If you want to run these on your own:
 
 1. Install [Beautiful Soup](https://www.crummy.com/software/BeautifulSoup/#Download)
 2. If desired, change folder location to download the CSVs. For example:
-   `df.to_csv(f'billboard.csv', sep=',', encoding='utf-8-sig', index = False)` to
-   `df.to_csv(f'./csv/billboard.csv', sep=',', encoding='utf-8-sig', index = False)`
+    `df.to_csv(f'billboard.csv', sep=',', encoding='utf-8-sig', index = False)` 
+	to
+    `df.to_csv(f'./csv/billboard.csv', sep=',', encoding='utf-8-sig', index = False)`
 3. Run the file in your terminal.
-   `python cowbell.py`
-   `python billboard.py`
+    `python cowbell.py`
+    `python billboard.py`
 
 ### Tools and Libraries
 
 This repo utilizes a number of tools, frameworks and libraries that are all included with Anaconda. 
-[Anaconda documentation and install](https://docs.anaconda.com)
+    [Anaconda documentation and install](https://docs.anaconda.com)
 Anaconda released an update on [September 24, 2020](https://docs.anaconda.com/anaconda/navigator/release-notes/). This repo runs on that latest release. 
 
 You can update by opening your terminal and enter:
@@ -79,8 +80,8 @@ If you do not wish to install Anaconda, be sure your machine has the following:
   * [Seaborn](https://seaborn.pydata.org/index.html)
 
 Install with PyPi:
-`pip install scipy`
-`pip install seaborn`
+    `pip install scipy`
+    `pip install seaborn`
 
 ### Running the Program in Jupyter Notebook
 1. Clone the repository.
