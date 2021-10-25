@@ -27,7 +27,7 @@ I accessed www.RottenTomatoes.com for Walken's films. Since the list was fairly 
 
 **Cowbell Data**
 
-I made three webscrapers to collect song data:
+I made three web scrapers to collect song data:
 1. `cowbell.py` This scraper ran through 4247 pages of UltimateCowbell.com[^4] to extract song information and wrote a CSV of the dataframe.
 2. `script.js` This was a manual scraper. RollingStone.com[^5] had a list of "The 500 Greatest Songs of All Time," which I wanted to cross-check against the UltimateCowbell list. Rolling Stone's site is a dynamically loaded website, so the python scraper couldn't read the contents of the HTML. I only needed to run the scraper on 10 pages, so I made a JavaScript code to run in the console and copy/pasted the output into a spreadsheet. 
 3. `billboard.py` This scraper ran through Wikipedia's lists of the Billboard's Hot 100 Singles[^6] between 1970 and 2020 and wrote a CSV. This list includes any single that reached a #1 position on the charts during this time, with pages separated by decades.  
@@ -38,7 +38,7 @@ Overall, over 5,600 songs were taken into the data and analyzed. The final list 
 
 ## RUNNING THE PROGRAM
 
-### Webscrapers
+### Web Scrapers
 
 If you cloned or downloaded this entire repo, you should have the CSVs that the web scrapers have made already available. These include:
 * `cowbell1_4247.csv`
@@ -108,6 +108,8 @@ Requirements met for Code Louisville:
 5. Visualize data in a graph, chart, or other visual representation of data.
 6. Implement a “scraper” that can be fed a type of file or URL and pull information off of it.
 7. Use pandas, matplotlib, and/or numpy to perform a data analysis project. Ingest 2 or more pieces of data, analyze that data in some manner, and display a new result to a graph, chart, or other display.
+
+<img src="./images/ferrell.jpg" alt="Will Ferrell" width=200>
 
 ## FOOTNOTES:
 
