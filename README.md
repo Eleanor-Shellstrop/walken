@@ -49,11 +49,17 @@ If you want to run these on your own:
 
 1. Install [Beautiful Soup](https://www.crummy.com/software/BeautifulSoup/#Download)
 2. If desired, change folder location to download the CSVs. For example:
+   
     `df.to_csv(f'billboard.csv', sep=',', encoding='utf-8-sig', index = False)` 
+
 	to
+
     `df.to_csv(f'./csv/billboard.csv', sep=',', encoding='utf-8-sig', index = False)`
+
 3. Run the file in your terminal.
+   
     `python cowbell.py`
+
     `python billboard.py`
 
 ### Tools and Libraries
@@ -80,6 +86,7 @@ If you do not wish to install Anaconda, be sure your machine has the following:
   * [Seaborn](https://seaborn.pydata.org/index.html)
 
 Install with PyPi:
+
     `pip install scipy`
     `pip install seaborn`
 
