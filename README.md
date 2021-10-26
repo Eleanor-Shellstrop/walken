@@ -84,10 +84,17 @@ If you do not wish to install Anaconda, be sure your machine has the following:
   * [SciPy](https://docs.scipy.org/doc/scipy/getting_started.html#getting-started-ref)
   * [Seaborn](https://seaborn.pydata.org/index.html)
 
-Install with PyPi:
+To add these packages with pip, install:
 
-    `pip install scipy`
-    `pip install seaborn`
+```
+pip install notebook
+pip install pandas
+pip install numpy
+python -m pip install -U pip
+python -m pip install -U matplotlib
+pip install scipy
+pip install seaborn
+```
 
 ### Running the Program in Jupyter Notebook
 1. Clone the repository.
