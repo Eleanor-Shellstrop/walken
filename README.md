@@ -38,28 +38,7 @@ Overall, over 5,600 songs were taken into the data and analyzed. The final list 
 
 ## RUNNING THE PROGRAM
 
-### Web Scrapers
 
-If you cloned or downloaded this entire repo, you should have the CSVs that the web scrapers have made already available. These include:
-* `cowbell1_4247.csv`
-* `billboard.csv`
-
-If you want to run these on your own:
-
-1. Install [Beautiful Soup](https://www.crummy.com/software/BeautifulSoup/#Download)
-2. If desired, change folder location to download the CSVs. For example:
-   
-    `df.to_csv(f'billboard.csv', sep=',', encoding='utf-8-sig', index = False)` 
-
-	to
-
-    `df.to_csv(f'./csv/billboard.csv', sep=',', encoding='utf-8-sig', index = False)`
-
-3. Run the file in your terminal.
-   
-    `python cowbell.py`
-
-    `python billboard.py`
 
 ### Tools and Libraries
 
@@ -103,7 +82,30 @@ pip install seaborn
 4. Navigate to the saved location of the repo.
 5. Open `walken.ipynb`.
 6. Click `Cell` tab and then `Run All`.
+   
+### Web Scrapers
 
+If you cloned or downloaded this entire repo, you should have the CSVs that the web scrapers have made already available. These include:
+* `cowbell1_4247.csv`
+* `billboard.csv`
+
+If you want to run these on your own:
+
+1. Install [Beautiful Soup](https://www.crummy.com/software/BeautifulSoup/#Download)
+2. If desired, change folder location to download the CSVs. For example:
+   
+    `df.to_csv(f'billboard.csv', sep=',', encoding='utf-8-sig', index = False)` 
+
+	to
+
+    `df.to_csv(f'./csv/billboard.csv', sep=',', encoding='utf-8-sig', index = False)`
+
+3. Run the file in your terminal.
+   
+    `python cowbell.py`
+
+    `python billboard.py`
+    
 ## REQUIREMENTS
 
 Requirements met for Code Louisville:
