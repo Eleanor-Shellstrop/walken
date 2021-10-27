@@ -38,6 +38,16 @@ Overall, over 5,600 songs were taken into the data and analyzed. The final list 
 
 ## RUNNING THE PROGRAM
 
+### Easy Option: Colab
+
+If you have a Google account, you can easily run this program in Colab- no downloads, packages or virtual enviroments needed. 
+
+1. [CLICK HERE FOR COLAB LINK](https://colab.research.google.com/drive/1PsxmpVZMSOpZSJAsURxGqrcKxoMAgcLl?usp=sharing)
+2. Once open, click `File > Save a Copy in Drive`
+3. Your copied version should automatically open.
+4. On the top tab bar, click `Runtime > Run all`
+5. Ta-da! That's it.
+
 ### Tools and Libraries
 
 This repo utilizes a number of tools, frameworks and libraries that are all included with Anaconda. 
