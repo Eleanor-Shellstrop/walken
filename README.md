@@ -38,8 +38,6 @@ Overall, over 5,600 songs were taken into the data and analyzed. The final list 
 
 ## RUNNING THE PROGRAM
 
-
-
 ### Tools and Libraries
 
 This repo utilizes a number of tools, frameworks and libraries that are all included with Anaconda. 
