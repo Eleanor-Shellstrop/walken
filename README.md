@@ -40,7 +40,7 @@ Overall, over 5,600 songs were taken into the data and analyzed. The final list 
 
 ### Easy Option: Colab
 
-If you have a Google account, you can easily run this program in Colab- no downloads, packages or virtual enviroments needed. 
+If you have a Google account, you can easily run this program in Colab- no downloads, packages or virtual environments needed. 
 
 1. [CLICK HERE FOR COLAB LINK](https://colab.research.google.com/drive/1PsxmpVZMSOpZSJAsURxGqrcKxoMAgcLl?usp=sharing)
 2. Once open, click `File > Save a Copy in Drive`
