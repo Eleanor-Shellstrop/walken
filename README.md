@@ -4,6 +4,12 @@ Project by Anne Ensign
 
 Analysis between various statistics of Christopher Walken's film career and popular music that utilizes the cowbell.
 
+JUMP TO:
+* [Methodology](#methodology)
+* [Running the program](#running-the-program)
+* [Requirements met for Code Louisville](#requirements)
+* [Footnotes](#footnotes)
+
 ![Fever](images/walken.gif)
 
 ## INTRODUCTION
