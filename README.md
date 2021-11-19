@@ -125,12 +125,114 @@ If you want to run these on your own:
 Requirements met for Code Louisville:
 
 1. Create a dictionary or list, populate it with several values, retrieve at least one value, and use it in your program.
+   ```
+    PIE CHARTS
+
+    # Wedges and labels
+   decades = [
+       pre50, the50s, the60s, 
+       the70s, the80s, the90s, 
+       the00s, the10s]
+
+   labels = [
+       'pre50', 'the50s', 'the60s', 
+       'the70s', 'the80s', 'the90s',
+       'the00s','the10s']
+    ...
+
+    # Pie Chart
+    ax1.pie(decades, explode=explode, labels=labels, autopct='%1.1f%%')
+   ```
 2. Read data from an external file, such as text, JSON, CSV, etc and use that data in your application.
+   ```
+    SEVERAL EXAMPLES, INCLUDING
+
+    # Use pandas to read CSV
+    walken = pd.read_csv('./csv/c_walken.csv')
+   ```
 3. Create and call at least 3 functions or methods, at least one of which must return a value that is used somewhere else in your code.
+   ```
+   METHOD- REPLACING M & K WITH 000s FOR DATAFRAME
+
+   # Replace M and K with corresponding 0s in millions and thousands
+   walken['box'] = walken['box']\
+                       .replace(r'[KM]+$', '', regex=True)\
+                       .astype(float) \
+                       * (walken['box'].str\
+                       .extract(r'[\d\.]+([KM]+)', expand=False)\
+                       .fillna(1)\
+                       .replace(['K','M'], [10**3, 10**6])\
+                       .astype(int))
+    ```
+    ```
+    FUNCTION- REPLACE Y TICKS WITH 'M' ON GRAPH
+
+    # Set Y1 Ticks
+    def millions(x, pos):
+       """The two args are the value and tick position."""
+       return '${:1.1f}M'.format(x*1e-6)
+    ```
+    ```
+    METHOD- REPLACE ALPHA WITH NUMERIC
+
+    Replace month names with numerals in Date column
+    newdates = {
+       'Date': {
+          'January': '1',
+           'February': '2', 
+           'March': '3',
+           'April': '4',
+           'May': '5',
+           'June': '6', 
+           'July': '7',
+           'August': '8',
+           'September': '9',
+           'October': '10',
+           'November': '11',
+           'December': '12'}
+   }
+
+   bill.replace(newdates, regex=True, inplace=True)
+   ```
 4. Analyze text and display information about it (ex: how many words in a paragraph).
+   ```
+   COMBINE .isin(), CONCAT, DROP DUPLICATED IN DF. 
+   USED TO GRAPH DATA
+
+    # Combine songs that on UltimateCowbell and Billboard
+    combo2 = songs[songs['Song']\
+                  .isin(bill.Single)]\
+                  .sort_values(by='Band', ascending=True) 
+    # Read CSV
+    extrabell = pd.read_csv('./csv/extra_cowbell.csv')
+
+
+   # Make final df of cowbell songs
+   frames = [newlist, extrabell, newlist2]
+   final_list = pd.concat(frames)
+
+
+   # Drop duplicate songs
+   final_list = final_list.drop_duplicates(subset=['song'])
+
+   # Make a new df 
+   newlist2 = pd.DataFrame(data=combo2, columns=['Band', 'Song', 'Year'])
+   newlist2.columns = ['artist', 'song', 'year']
+   ```
 5. Visualize data in a graph, chart, or other visual representation of data.
+   ```
+    SEVERAL
+   ```
 6. Implement a “scraper” that can be fed a type of file or URL and pull information off of it.
+    ```
+    billboard.py
+    cowbell.py
+    script.js
+    ```
 7. Use pandas, matplotlib, and/or numpy to perform a data analysis project. Ingest 2 or more pieces of data, analyze that data in some manner, and display a new result to a graph, chart, or other display.
+   ```
+    SEVERAL
+   ```
 
 <img src="./images/ferrell.jpg" alt="Will Ferrell" width=200>
 
